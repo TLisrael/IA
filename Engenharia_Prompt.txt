@@ -1,0 +1,102 @@
+Conceito Inicial:
+    O que é IA Generativa: Um tipo de inteligencia artificial que tem a capacidade de criar
+    novos conteudoos e ideias, como textos, imagens e videos, em respostas a solicitação de usuários
+
+    Ferramentas de IA generativa: GPT, Gemini, Claude (Plataformas de chat com IA )
+
+
+    Ferramentas OpenSource: Ollama e HuggingFace 
+
+    HuggingFace é o maior repositiorio de inteligencia artificial OpenSource
+
+
+Entendendo Prompts:
+    - Prompt é a forma com a qual enviamos instruções para IA Generativa
+    - Os Prompts são essenciais para interagir com modelos de limguagem, pois determinam o
+    tipo de resposta ou ação que o modelo irá gerar
+
+Tipos de prompt: 
+    Prompt textual:
+        A forma mais comum de prompt, onde um usuário o fornece uma ou mais frases de textos
+    Prompt de texto para imagens:
+        Podem ser geradas imagens a partir de prompts de texto
+    Prompt imagem para texto:
+        Alguns modelos de IA podem processar imagens e gerar descrições
+    Prompt Audio
+        Posso interagir com IAs por mei de áudio, ou até enviar uma gravação de reuinião online
+    Prompt Texto para videos
+
+
+Alucinação: O risco dos modelos
+    Alucinação é um termo utilizado para descrever quando um modelo de IA produz informações
+    incorretas, enganosas ou completamente inventadas que podem parecer plausiveis
+    As Alucinações são geralmente causadas por fatores que ocorrem durante a fase de treinament
+
+Importancia de Prompts:
+    Maximizar a eficacia dos modelos: Permitindo que as IAs gen compreendam melhor as expectativas
+    do usuário e produzam saídas alinhadas com as necessidades especificas
+    Reduzir Risco de alucinações: Obter melhores respostas com o uso de engenharia de prompt
+
+
+Caracteristicas de Prompts
+    - Especificidade: Ser especifico na formulação do prompt ajuda a reduzir ambiguidades e orienta
+    o modelo para uma resposta mais direcionada.
+    - Contextualização: Incluir contexto relevante no prompt pode melhorar a precisão das respostas
+    - Iteratividade: Processo iterativo de refinamento da pergunta com base nas respostas recebidas
+
+
+Componentes de um prompt:
+    1- Função ou Papel (Role): Tambem conhecida como persona. Pode melhorar a escrita e estilizar o texto
+        Exemplo: Você é um auditor interno governamental
+    2 - Diretiva: É o Nucleo do prompt, a intenção
+        Exemplo: Diga-me cinco bons livros para ler
+    3 - Exemplos: Também conhecido como "shots", agem como demonstrações que guiam a IA Gen a realizar uma tarefa.
+        Exemplo: Em um prompt de tradução, pode incluir um exemplo de como a tradução deve ser feita.
+
+    4 - Informação adicional (contexto): Muitas vezes é necessário incluir informações adicionais no prompt
+    como partes de um arquivo de texto
+        Exemplo: O texto da recomendação e da manifestação da unidade exminada
+    
+    5 - instruções de estilo: Especificam o estilo, tom ou genero desejado no prompt para modalr a saída de uma IA Gen
+        Exemplo: Escreva um paragrafo claro e sucinto sobre sem separação por topicos
+    6 - Formatação de saída: Respostas em CSV,JSON ou Markdown 
+        Exemplo: Responda no formato CSV
+
+    
+Zero-Shot Prompting:
+    Os LLMs hoje treinados em grandes quantidades de dados e sintonizados para seguir instruç~es são capazes
+    de executar tarefas de tiro zero.
+
+Few-Shot Prompting
+    O prompt de poucos disparos pode ser usado como uma técnica para permitir o aprendizado no contexto
+    onde fornecemos demonstrações no prompt para direcionar o modelo para um melhor desempenho
+
+Chain of Throught: 
+    Tecnica que consiste em pedir ao modelo que explique o raciocionio passo a passo
+    antes de chegar à resposta final. Isso ajudaa a garantir que o processo logivo esteja claro e que o resultado
+    seja mais preciso
+
+Contextual Prompting:
+    Essa técnica envolve fornecer um contexto claro e relevante ao modelo, para garantir que ele compreenda o cenário 
+    antes de gerar uma resposta.
+
+Style-Specifc Prompting
+    Essa Tecnica envolve definir um estilo de resposta desejada, como formal, infomal, técnico, humooristico
+
+Lengt Limitation:
+    O objetivo é controlar o comprimento da resposta, seja pedindo uma resposta curta ou longa, dependendo da necessidade.
+
+Step-by-Step:
+    Solicita que o modelo forneça uma resposta estruturada ou um conjunnto de etapas para explicar como realizar algo ou entender um Conceito
+
+Definition or Exemplification Prompting:
+    Envolve pedir ao modelo que forneça uma definição ou exemplifique um conceito com detalhes e exemplos práticos, 
+    visanado maior clareza.
+
+Aplicações - Generating DATA
+    Exemplo de Prompt:
+        Produza 5 exemplares para analise de sentimento. Os exemplos são categorizados como positivo e negativo.
+        Produza 2 exemplos negativos e 3 exemplos positivos. Use este formato para os exemplos:
+        P: <frase>
+        A: <sentimento>
+

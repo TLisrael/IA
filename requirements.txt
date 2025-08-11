@@ -1,0 +1,11 @@
+ipykernel
+openai
+python-dotenv
+yfinance
+pandas
+matplotlib
+seaborn
+plotly
+scikit-learn
+scipy
+statsmodels
